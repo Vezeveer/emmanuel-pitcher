@@ -1,0 +1,69 @@
+.App {
+  width: 100%;
+  background: #bf8edf;
+  color: #7effa7;
+}
+
+.App .bg {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+.App .bg .right {
+  float: right;
+}
+
+.App .container {
+  max-width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.App .container .menu-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  border-right: 2px solid black;
+}
+
+.App .container .menu-container .menu-position .menu {
+  position: relative;
+  text-align: center;
+  font-size: 1.1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  z-index: 1;
+}
+
+.App .container .menu-container .menu-position .menu:hover {
+  background: rgba(63, 63, 63, 0.199);
+}
+
+.App .container .menu-container .menu-position a {
+  text-decoration: none;
+  color: #7effa7;
+}
+
+.App .container .display-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+/*# sourceMappingURL=App.css.map */
