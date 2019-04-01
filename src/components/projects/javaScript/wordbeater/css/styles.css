@@ -1,0 +1,38 @@
+.word-beater-container {
+  text-align: center;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 55;
+}
+
+.word-beater-container .main-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(145, 13, 35, 0.575);
+}
+
+.word-beater-container .main-container .wb-container {
+  width: 100%;
+}
+
+.word-beater-container .main-container .message {
+  color: red;
+}
+
+.word-beater-container .main-container .instruct-container {
+  color: white;
+  background: rgba(145, 13, 35, 0.575);
+  border-radius: 5px;
+}
+
+.word-beater-container .main-container .instruct-container h3 {
+  margin-top: 10px;
+  padding-top: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,51 @@
+$text-base: rgb(29, 29, 29);
+$body-bg: rgba(228, 228, 228, 0.11);
+
+.contact-form-container{
+  width: 100%;
+  background: $body-bg;
+  .contact-form{
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    width: 500px;
+    label{
+      color: white;
+      margin-top: 10px;
+      display: block;
+      text-align: left;
+      input, textarea{
+        margin-top: 10px;
+        margin: 0 auto;
+        background: none;
+        border: none;
+        outline: none;
+        width: 400px;
+        color: white;
+      }
+      input:valid{
+        border-color: green;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+          transition: background-color 5000s ease-in-out 0s;
+          -webkit-text-fill-color: #fff !important;
+      }
+      .message-label{
+
+      }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+    }
+    label:nth-child(4){
+      border-bottom: none;
+    }
+    .email{
+      
+    }
+    button{
+      background: #3333336b;
+    }
+  }
+}

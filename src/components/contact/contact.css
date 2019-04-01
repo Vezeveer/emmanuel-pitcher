@@ -1,0 +1,51 @@
+.contact-form-container {
+  width: 100%;
+  background: rgba(228, 228, 228, 0.11);
+}
+
+.contact-form-container .contact-form {
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  width: 500px;
+}
+
+.contact-form-container .contact-form label {
+  color: white;
+  margin-top: 10px;
+  display: block;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+}
+
+.contact-form-container .contact-form label input, .contact-form-container .contact-form label textarea {
+  margin-top: 10px;
+  margin: 0 auto;
+  background: none;
+  border: none;
+  outline: none;
+  width: 400px;
+  color: white;
+}
+
+.contact-form-container .contact-form label input:valid {
+  border-color: green;
+}
+
+.contact-form-container .contact-form label input:-webkit-autofill,
+.contact-form-container .contact-form label input:-webkit-autofill:hover,
+.contact-form-container .contact-form label input:-webkit-autofill:focus,
+.contact-form-container .contact-form label input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.contact-form-container .contact-form label:nth-child(4) {
+  border-bottom: none;
+}
+
+.contact-form-container .contact-form button {
+  background: #3333336b;
+}
+/*# sourceMappingURL=contact.css.map */

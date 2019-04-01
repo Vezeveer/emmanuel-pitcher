@@ -16,6 +16,15 @@ $base-green: #7effa7;
     .right{
       float: right;
     }
+    .bg-gradient{
+      position: absolute;
+      width: 100vw;
+      z-index: 0;
+      opacity: .6;
+      height: 100vh;
+      top: 0;
+      background-image: linear-gradient(45deg, #290a59, #ff7c00);
+    }
   }
   .container{
     max-width: 1200px;
@@ -53,6 +62,7 @@ $base-green: #7effa7;
       align-items: center;
       justify-content: center;
       z-index: 1;
+      position: relative;
     }
   }
 }

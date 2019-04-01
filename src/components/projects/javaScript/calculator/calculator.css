@@ -1,0 +1,166 @@
+.calc-position {
+  background: #333;
+}
+
+.calc-position .calc-container {
+  padding: 50px 5px 5px 5px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.calc-position .calc-container .screen {
+  display: -ms-grid;
+  display: grid;
+}
+
+.calc-position .calc-container .screen input {
+  text-align: right;
+  background: #333;
+  border: none;
+}
+
+.calc-position .calc-container .screen .info {
+  color: red;
+}
+
+.calc-position .calc-container .screen .input {
+  color: #f19b38;
+  font-size: 30px;
+}
+
+.calc-position .calc-container .top-row-items {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calc-position .calc-container .second-third-row-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% 25%;
+      grid-template-columns: 75% 25%;
+}
+
+.calc-position .calc-container .second-third-row-items .four-to-nine-container {
+  display: -ms-grid;
+  display: grid;
+}
+
+.calc-position .calc-container .second-third-row-items .four-to-nine-container .seven-to-nine {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.calc-position .calc-container .second-third-row-items .four-to-nine-container .four-to-six {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.calc-position .calc-container .second-third-row-items .four-to-nine-container button {
+  background: #1d1d1d;
+}
+
+.calc-position .calc-container .second-third-row-items .four-to-nine-container button:hover {
+  background: #5f5f5f;
+}
+
+.calc-position .calc-container .second-third-row-items .plus {
+  display: -ms-grid;
+  display: grid;
+  height: 99%;
+}
+
+.calc-position .calc-container .fourth-to-last {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% 25%;
+      grid-template-columns: 75% 25%;
+}
+
+.calc-position .calc-container .fourth-to-last .three-to-last {
+  display: -ms-grid;
+  display: grid;
+}
+
+.calc-position .calc-container .fourth-to-last .three-to-last .three-to-one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.calc-position .calc-container .fourth-to-last .three-to-last .three-to-one button {
+  background: #1d1d1d;
+}
+
+.calc-position .calc-container .fourth-to-last .three-to-last .three-to-one button:hover {
+  background: #5f5f5f;
+}
+
+.calc-position .calc-container .fourth-to-last .three-to-last .zero-dec {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+.calc-position .calc-container .fourth-to-last .three-to-last .zero-dec button:nth-child(1) {
+  background: #1d1d1d;
+}
+
+.calc-position .calc-container .fourth-to-last .three-to-last .zero-dec button:nth-child(1):hover {
+  background: #5f5f5f;
+}
+
+.calc-position .calc-container .fourth-to-last .equals {
+  display: -ms-grid;
+  display: grid;
+}
+
+.calc-position .calc-container .fourth-to-last .equals button {
+  height: 98%;
+}
+
+.calc-position .calc-container button {
+  height: 50px;
+  background: #272727;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin: 1px;
+}
+
+.calc-position .calc-container button:hover {
+  background: #5f5f5f;
+}
+
+.calc-position .calc-container .exit-calc {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.calc-position .calc-container .exit-calc button {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  font-size: 15px;
+}
+
+.calc-position .calc-container .exit-calc a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=calculator.css.map */

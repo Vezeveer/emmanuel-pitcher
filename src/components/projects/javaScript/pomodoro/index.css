@@ -1,0 +1,60 @@
+.pomo-position {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 52, 65, 0.753)), to(rgba(43, 29, 24, 0.795)));
+  background-image: linear-gradient(rgba(3, 52, 65, 0.753), rgba(43, 29, 24, 0.795));
+}
+
+.pomo-position .pomo-container {
+  text-align: center;
+}
+
+.pomo-position .pomo-container .pomo-settings {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.pomo-position .pomo-container .pomo-settings .break-length div, .pomo-position .pomo-container .pomo-settings .session-length div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 11% 20% 11%;
+      grid-template-columns: 11% 20% 11%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pomo-position .pomo-container .play-reset button:nth-child(2) {
+  color: red;
+}
+
+.pomo-position .pomo-container .play-reset button:nth-child(1) {
+  color: blue;
+}
+
+.pomo-position .pomo-container p a {
+  text-decoration: none;
+  color: black;
+}
+
+.pomo-position .pomo-container button {
+  height: 60px;
+  padding: 10px;
+  margin: 2px;
+}
+
+.pomo-position button {
+  color: white;
+  background: #333;
+  border: 1px solid black;
+}
+
+.pomo-position button:hover {
+  background: dimgray;
+}
+/*# sourceMappingURL=index.css.map */

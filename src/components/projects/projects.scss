@@ -1,0 +1,31 @@
+.projects-container{
+  .p-div-collection{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    .p-div{
+      width: 200px;
+      height: 200px;
+      background: rgba(0, 0, 0, 0.288);
+      position: relative;
+      .p-img{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.452);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 100px;
+        }
+      }
+    }
+  }
+}

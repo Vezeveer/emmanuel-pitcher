@@ -1,0 +1,93 @@
+.js-body {
+  width: 600px;
+}
+
+.js-body h3 {
+  text-align: center;
+}
+
+.js-body .p1-wrapper {
+  font-family: tahoma;
+  font-weight: 900;
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  overflow: hidden;
+}
+
+.js-body .p1-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.js-body .p1-wrapper .p1 {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.js-body .p1-wrapper .p1 .p1-bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.514);
+  position: absolute;
+}
+
+.js-body .p1-wrapper .p1 .p1-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 18% 70%;
+      grid-template-columns: 18% 70%;
+}
+
+.js-body .p1-wrapper .p1 .p1-items img {
+  margin-right: 10px;
+  opacity: .8;
+}
+
+.js-body .p1-wrapper .p1 .p1-items .p1-label {
+  z-index: 9;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.js-body .p1-wrapper .p1-pomodoro {
+  background-image: url("/imgs/pomodoro-clock.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.js-body .p1-wrapper .p1-drum {
+  background-image: url("/imgs/drum-606.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.js-body .p1-wrapper .p1-calc {
+  background-image: url("/imgs/calculator.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.js-body .p1-wrapper .p1-wordbeater {
+  background-image: url("/imgs/wordbeater.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.js-body .p1-wrapper .p1-rqm {
+  background-image: url("/imgs/rqm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=javaScript.css.map */
