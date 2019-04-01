@@ -1,0 +1,28 @@
+.home-position{
+  .home-container{
+    .logo-lvl-1{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo-lvl-2{
+        h4{
+          text-align: left;
+          color: rgba(255, 255, 255, 0.336);
+          padding: 0;
+          margin: 0;
+          font-size: 1em;
+        }
+        .ep-logo{
+          width: 300px;
+        }
+        h4:nth-child(3){
+          text-align: right;
+        }
+      }
+    }
+  }
+}
