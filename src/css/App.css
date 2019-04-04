@@ -1,7 +1,7 @@
 .App {
   width: 100%;
   background: #bf8edf;
-  color: #7effa7;
+  color: white;
 }
 
 .App .bg {
@@ -45,6 +45,7 @@
   position: relative;
   z-index: 1;
   border-right: 2px solid black;
+  overflow: hidden;
 }
 
 .App .container .menu-container .menu-position .menu {
@@ -62,7 +63,22 @@
 
 .App .container .menu-container .menu-position a {
   text-decoration: none;
-  color: #7effa7;
+  color: white;
+}
+
+.App .container .menu-container .menu-position .menu-active {
+  color: rgba(194, 61, 61, 0.486);
+  background: rgba(63, 63, 63, 0.5);
+}
+
+.App .container .menu-container .menu-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff8c;
 }
 
 .App .container .display-container {
@@ -76,5 +92,15 @@
           justify-content: center;
   z-index: 1;
   position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    -ms-grid-columns: null;
+        grid-template-columns: null;
+  }
+  .container .menu-container {
+    color: red;
+  }
 }
 /*# sourceMappingURL=App.css.map */

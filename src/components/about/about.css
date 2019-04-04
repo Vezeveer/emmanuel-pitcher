@@ -1,0 +1,14 @@
+.about-container {
+  margin: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+.about-container div p a {
+  text-decoration: none;
+  color: #a0b8ec;
+}
+/*# sourceMappingURL=about.css.map */

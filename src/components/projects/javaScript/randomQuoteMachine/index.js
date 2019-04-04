@@ -40,7 +40,7 @@ class RandomQuoteMachine extends Component {
   render() {
     return (
       <div className="rqm-position">
-        <div className="rqm-container" id="quote-box" className={"col-md-6 card bg-" + this.state.currentColor}>
+        <div className="rqm-container" id="quote-box" >
           <div className="rqm-quote">
             <p id="text" className="blockquote card-text text-quote"><span id="span-qt">"</span>{this.state.quote}
             </p>

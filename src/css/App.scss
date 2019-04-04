@@ -1,10 +1,11 @@
 $bg-base: #bf8edf;
 $base-green: #7effa7;
+$menu-text: white;
 
 .App{
   width: 100%;
   background: $bg-base;
-  color: $base-green;
+  color: white;
   .bg{
     width: 100%;
     height: 100vh;
@@ -39,6 +40,7 @@ $base-green: #7effa7;
       position: relative;
       z-index: 1;
       border-right: 2px solid black;
+      overflow: hidden;
       .menu-position{
           .menu{
             position: relative;
@@ -53,16 +55,39 @@ $base-green: #7effa7;
           }
           a{
             text-decoration: none;
-            color: $base-green;
+            color: $menu-text;
+          }
+          .menu-active{
+            color: rgba(194, 61, 61, 0.486);
+            background: rgba(63, 63, 63, 0.5);
           }
       }
+      .menu-footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        font-size: 12px;
+        text-align: center;
+        color: #ffffff8c;
+      }
     }
+    
     .display-container{
       display: grid;
       align-items: center;
       justify-content: center;
       z-index: 1;
       position: relative;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .container{
+    grid-template-columns: null;
+    .menu-container{
+      color: red;
     }
   }
 }

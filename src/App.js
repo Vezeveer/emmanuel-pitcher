@@ -15,6 +15,31 @@ import WordBeater from './components/projects/javaScript/wordbeater'
 import './css/App.css'
 
 class App extends Component {
+
+  state = {
+    toggleName: null
+  }
+
+  toggleMenuClass = (e) => {
+    function checkIfToggled(bName) {
+      switch (bName) {
+        case `${bName}`:
+          document.querySelector(`.${bName.toLowerCase()}`)
+            .classList = `menu ${bName.toLowerCase()}`;
+          break;
+        default:
+          break;
+      }
+    }
+    if (this.state.toggleName !== '') {
+      checkIfToggled(this.state.toggleName)
+    }
+    this.setState({
+      toggleName: e.target.innerHTML
+    })
+    e.target.classList.toggle('menu-active')
+  }
+
   render() {
     return (
       <div className="App">
@@ -27,11 +52,14 @@ class App extends Component {
           <div className="container">
             <div className="menu-container">
               <div className="menu-position">
-                <Link to="/"><div className="menu">Home</div></Link>
-                <Link to="/about"><div className="menu">About</div></Link>
-                <Link to="/projects"><div className="menu">Projects</div></Link>
-                <Link to="/photoshop"><div className="menu">Photoshop</div></Link>
-                <Link to="/contact"><div className="menu">Contact</div></Link>
+                <Link to="/"><div onClick={this.toggleMenuClass} className="menu home">Home</div></Link>
+                <Link to="/about"><div onClick={this.toggleMenuClass} className="menu about">About</div></Link>
+                <Link to="/projects"><div onClick={this.toggleMenuClass} className="menu projects">Projects</div></Link>
+                <Link to="/photoshop"><div onClick={this.toggleMenuClass} className="menu photoshop">Photoshop</div></Link>
+                <Link to="/contact"><div onClick={this.toggleMenuClass} className="menu contact">Contact</div></Link>
+              </div>
+              <div className="menu-footer">
+                <p>2019 &copy; Emmanuel Pitcher | mortalmanny@live.com</p>
               </div>
             </div>
             <div className="display-container">
