@@ -49,7 +49,7 @@ class App extends Component {
           <div className="bg-gradient"></div>
         </div>
         <Router>
-          <div className="container">
+          <div className="menu-and-bg-container">
             <div className="menu-container">
               <div className="menu-position">
                 <Link to="/"><div onClick={this.toggleMenuClass} className="menu home">Home</div></Link>

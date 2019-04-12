@@ -1,22 +1,27 @@
 .App {
   width: 100%;
-  background: #bf8edf;
   color: white;
 }
 
 .App .bg {
+  background: #bf8edf;
+  height: 100%;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: absolute;
+  top: 0;
+  position: fixed;
+}
+
+.App .bg .left {
+  height: 100%;
 }
 
 .App .bg .right {
+  height: 100%;
   float: right;
 }
 
 .App .bg .bg-gradient {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   z-index: 0;
   opacity: .6;
@@ -25,30 +30,29 @@
   background-image: linear-gradient(45deg, #290a59, #ff7c00);
 }
 
-.App .container {
+.App .menu-and-bg-container {
   max-width: 1200px;
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
-  overflow: hidden;
   margin: 0 auto;
 }
 
-.App .container .menu-container {
+.App .menu-and-bg-container .menu-container {
+  width: 300px;
+  height: 100vh;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  z-index: 5;
   border-right: 2px solid black;
   overflow: hidden;
 }
 
-.App .container .menu-container .menu-position .menu {
+.App .menu-and-bg-container .menu-container .menu-position .menu {
   position: relative;
   text-align: center;
   font-size: 1.1em;
@@ -57,21 +61,21 @@
   z-index: 1;
 }
 
-.App .container .menu-container .menu-position .menu:hover {
+.App .menu-and-bg-container .menu-container .menu-position .menu:hover {
   background: rgba(63, 63, 63, 0.199);
 }
 
-.App .container .menu-container .menu-position a {
+.App .menu-and-bg-container .menu-container .menu-position a {
   text-decoration: none;
   color: white;
 }
 
-.App .container .menu-container .menu-position .menu-active {
+.App .menu-and-bg-container .menu-container .menu-position .menu-active {
   color: rgba(194, 61, 61, 0.486);
   background: rgba(63, 63, 63, 0.5);
 }
 
-.App .container .menu-container .menu-footer {
+.App .menu-and-bg-container .menu-container .menu-footer {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -81,7 +85,8 @@
   color: #ffffff8c;
 }
 
-.App .container .display-container {
+.App .menu-and-bg-container .display-container {
+  margin-left: 300px;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;

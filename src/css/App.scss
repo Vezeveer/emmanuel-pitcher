@@ -2,23 +2,30 @@ $bg-base: #bf8edf;
 $base-green: #7effa7;
 $menu-text: white;
 
+@mixin gridCenter($align, $justify){
+  display: grid;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 .App{
   width: 100%;
-  background: $bg-base;
   color: white;
   .bg{
+    background: $bg-base;
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: absolute;
+    top: 0;
+    position: fixed;
     .left{
-
+      height: 100%;
     }
     .right{
+      height: 100%;
       float: right;
     }
     .bg-gradient{
-      position: absolute;
+      position: fixed;
       width: 100vw;
       z-index: 0;
       opacity: .6;
@@ -27,18 +34,19 @@ $menu-text: white;
       background-image: linear-gradient(45deg, #290a59, #ff7c00);
     }
   }
-  .container{
+  .menu-and-bg-container{
     max-width: 1200px;
     display: grid;
     height: 100vh;
-    grid-template-columns: 30% 70%;
-    overflow: hidden;
+    //grid-template-columns: 30% 70%;
+    //overflow: hidden;
     margin: 0 auto;
     .menu-container{
-      display: grid;
-      align-items: center;
-      position: relative;
-      z-index: 1;
+      width: 300px;
+      height: 100vh;
+      @include gridCenter(center, null);
+      position: fixed;
+      z-index: 5;
       border-right: 2px solid black;
       overflow: hidden;
       .menu-position{
@@ -49,9 +57,9 @@ $menu-text: white;
             padding-top: 1em;
             padding-bottom: 1em;
             z-index: 1;
-          }
-          .menu:hover{
-            background: rgba(63, 63, 63, 0.199);
+            &:hover{
+              background: rgba(63, 63, 63, 0.199);
+            }
           }
           a{
             text-decoration: none;
@@ -74,9 +82,8 @@ $menu-text: white;
     }
     
     .display-container{
-      display: grid;
-      align-items: center;
-      justify-content: center;
+      margin-left: 300px;
+      @include gridCenter(center,center);
       z-index: 1;
       position: relative;
     }

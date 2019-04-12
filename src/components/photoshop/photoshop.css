@@ -1,0 +1,84 @@
+.photoshop-container .toggles {
+  top: 0;
+  left: 0;
+  margin: 10px;
+  position: absolute;
+}
+
+.photoshop-container .toggles div {
+  display: inline-block;
+}
+
+.photoshop-container .toggles div svg {
+  margin-right: 5px;
+  stroke: rgba(255, 255, 255, 0.466);
+  fill: none;
+  stroke-width: 2px;
+}
+
+.photoshop-container .toggles div svg:hover {
+  stroke: white;
+}
+
+.photoshop-container .toggles div .toggled {
+  stroke: white;
+}
+
+.photoshop-container .toggles p {
+  position: absolute;
+  top: 10px;
+  margin-left: 29px;
+  width: 24px;
+  height: 4px;
+  background: #5acd80;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.photoshop-container .toggles .p-sm {
+  margin-left: 0;
+}
+
+.photoshop-container .toggles .p-md {
+  margin-left: 29px;
+}
+
+.photoshop-container .toggles .p-lg {
+  margin-left: 58px;
+}
+
+.photoshop-container .image-collection {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.photoshop-container .image-collection .column img {
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.photoshop-container .iSmall div img {
+  height: 100px !important;
+}
+
+.photoshop-container .iLarge div img {
+  height: 300px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .photoshop-container .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+/*# sourceMappingURL=photoshop.css.map */
