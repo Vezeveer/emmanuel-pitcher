@@ -14,6 +14,8 @@ import RandomQuoteMachine from './components/projects/javaScript/randomQuoteMach
 import WordBeater from './components/projects/javaScript/wordbeater'
 import './css/App.css'
 
+import UnderConstructionPS from './components/underconstructionps'
+
 class App extends Component {
 
   state = {
@@ -52,7 +54,7 @@ class App extends Component {
           <div className="menu-and-bg-container">
             <div className="menu-container">
               <div className="menu-position">
-                <Link to="/"><div onClick={this.toggleMenuClass} className="menu home">Home</div></Link>
+                {/*<Link to="/"><div onClick={this.toggleMenuClass} className="menu home">Home</div></Link>*/}
                 <Link to="/about"><div onClick={this.toggleMenuClass} className="menu about">About</div></Link>
                 <Link to="/projects"><div onClick={this.toggleMenuClass} className="menu projects">Projects</div></Link>
                 <Link to="/photoshop"><div onClick={this.toggleMenuClass} className="menu photoshop">Photoshop</div></Link>
@@ -67,7 +69,8 @@ class App extends Component {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/projects" component={Projects} />
-                <Route exact path="/photoshop" component={Photoshop} />
+                <Route exact path="/photoshop" component={UnderConstructionPS} /> {/*under construction*/}
+                <Route exact path="/photoshopRedirect" component={Photoshop} />
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/javascript" component={Javascript} />
                 <Route exact path="/pomodoro" component={Pomodoro} />

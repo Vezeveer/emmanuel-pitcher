@@ -3,13 +3,12 @@ import './about.css'
 
 export default class about extends Component {
 
+  // On the about page click continue to exit popup
   handleExit = (e) => {
-    console.log(e.target)
     document.querySelector(".about-under-construction").classList.toggle("testPhase1");
     setTimeout(() => {
       document.querySelector(".about-under-construction").classList.toggle("test");
-    }, 2000)
-
+    }, 1000)
   }
 
   render() {
@@ -49,6 +48,11 @@ export default class about extends Component {
           </div>
         </div>
         <h3 className="links-header">Links</h3>
+        <div className="links">
+          <a href="https://stackoverflow.com/users/story/11000146" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/stack-overflow-brands.svg" width="24px" height="24px" alt="stackoverflow logo" />
+          </a>
+        </div>
       </div>
 
     )

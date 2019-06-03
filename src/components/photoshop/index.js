@@ -45,7 +45,7 @@ export default class Photoshop extends Component {
       <div className="photoshop-container">
         <div className="toggles">
           <div>
-            <svg onClick={this.toggleSmall} className={`small ${this.state.tSmall}`} width="24" height="24">
+            <svg onClick={this.toggleLarge} className={`small ${this.state.tLarge}`} width="24" height="24">
               <rect x="0" y="0" width="24" height="24" />
             </svg>
           </div>
@@ -57,7 +57,7 @@ export default class Photoshop extends Component {
             </svg>
           </div>
           <div>
-            <svg onClick={this.toggleLarge} className={`large ${this.state.tLarge}`} width="24" height="24">
+            <svg onClick={this.toggleSmall} className={`large ${this.state.tSmall}`} width="24" height="24">
               <rect x="0" y="0" width="24" height="24" />
               <line x1="0" y1="8" x2="24" y2="8" />
               <line x1="0" y1="16" x2="24" y2="16" />
@@ -69,16 +69,28 @@ export default class Photoshop extends Component {
         </div>
         <div className={`image-collection ${this.state.imgSize}`}>
           <div className="column">
-            <img src="/imgs/temp/1.jpg" alt="" />
-            <img src="/imgs/temp/2.jpg" alt="" />
-            <img src="/imgs/temp/3.jpg" alt="" />
-            <img src="/imgs/temp/4.jpg" alt="" />
-            <img src="/imgs/temp/5.png" alt="" />
-            <img src="/imgs/temp/6.jpg" alt="" />
+            <img src="/imgs/photoshop/1.jpg" alt="" />
+            <img src="/imgs/photoshop/2.jpg" alt="" />
+            <img src="/imgs/photoshop/3.jpg" alt="" />
+            <img src="/imgs/photoshop/4.jpg" alt="" />
+            <img src="/imgs/photoshop/5.png" alt="" />
+            <img src="/imgs/photoshop/6.jpg" alt="" />
           </div>
           <div className="column">
-            <img src="/imgs/temp/7.jpg" alt="" />
-            <img src="/imgs/temp/8.jpg" alt="" />
+            <img src="/imgs/photoshop/7.jpg" alt="" />
+            <img src="/imgs/photoshop/8.jpg" alt="" />
+            <img src="/imgs/photoshop/9.jpg" alt="" />
+            <img src="/imgs/photoshop/10.jpg" alt="" />
+            <img src="/imgs/photoshop/11.jpg" alt="" />
+            <img src="/imgs/photoshop/12.jpg" alt="" />
+          </div>
+          <div className="column">
+            <img src="/imgs/photoshop/13.jpg" alt="" />
+            <img src="/imgs/photoshop/14.jpg" alt="" />
+            <img src="/imgs/photoshop/15.jpg" alt="" />
+            <img src="/imgs/photoshop/16.jpg" alt="" />
+            <img src="/imgs/photoshop/17.jpg" alt="" />
+            <img src="/imgs/photoshop/18.jpg" alt="" />
           </div>
         </div>
       </div>

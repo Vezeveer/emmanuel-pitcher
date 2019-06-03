@@ -35,7 +35,7 @@
   transition: .5s;
 }
 
-.photoshop-container .toggles .p-sm {
+.photoshop-container .toggles .p-lg {
   margin-left: 0;
 }
 
@@ -43,7 +43,7 @@
   margin-left: 29px;
 }
 
-.photoshop-container .toggles .p-lg {
+.photoshop-container .toggles .p-sm {
   margin-left: 58px;
 }
 
