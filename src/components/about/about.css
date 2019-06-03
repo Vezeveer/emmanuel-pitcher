@@ -11,4 +11,39 @@
   text-decoration: none;
   color: #a0b8ec;
 }
+
+.links-header {
+  text-align: center;
+}
+
+.about-under-construction {
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+  background: rgba(0, 0, 0, 0.507);
+  width: 105%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.about-under-construction div {
+  background: #bf8edf;
+  width: 400px;
+  margin: 25% auto;
+}
+
+.about-under-construction div p {
+  padding: 50px;
+  text-align: center;
+}
+
+.testPhase1 {
+  opacity: 0;
+}
+
+.test {
+  display: none;
+}
 /*# sourceMappingURL=about.css.map */

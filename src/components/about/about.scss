@@ -12,3 +12,34 @@
     }
   }
 }
+.links-header{
+  text-align: center;
+}
+
+.about-under-construction{
+  transition: opacity 1s ease-out;
+  background: rgba(0, 0, 0, 0.507);
+  width: 105%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  div{
+    background: #bf8edf;
+    width: 400px;
+    margin: 25% auto;
+    p{
+      padding: 50px;
+      text-align: center;
+    }
+  }
+}
+
+.testPhase1{
+  opacity: 0;
+}
+
+.test{
+  display: none;
+}
