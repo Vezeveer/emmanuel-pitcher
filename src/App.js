@@ -15,6 +15,7 @@ import WordBeater from './components/projects/javaScript/wordbeater'
 import './css/App.css'
 
 import UnderConstructionPS from './components/underconstructionps'
+import UnderConstructionAbout from './components/under_construction_about'
 
 class App extends Component {
 
@@ -67,10 +68,11 @@ class App extends Component {
             <div className="display-container">
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/about" component={About} />
+                <Route exact path="/about" component={UnderConstructionAbout} /> {/*under construction*/}
+                <Route exact path="/aboutRedirect" component={About} /> {/*delete later*/}
                 <Route exact path="/projects" component={Projects} />
                 <Route exact path="/photoshop" component={UnderConstructionPS} /> {/*under construction*/}
-                <Route exact path="/photoshopRedirect" component={Photoshop} />
+                <Route exact path="/photoshopRedirect" component={Photoshop} /> {/*delete later */}
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/javascript" component={Javascript} />
                 <Route exact path="/pomodoro" component={Pomodoro} />
