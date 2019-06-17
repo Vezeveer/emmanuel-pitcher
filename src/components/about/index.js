@@ -32,6 +32,9 @@ export default () => {
         <a href="https://stackoverflow.com/users/story/11000146" target="_blank" rel="noopener noreferrer">
           <img src="/imgs/stack-overflow-brands.svg" width="24px" height="24px" alt="stackoverflow logo" />
         </a>
+        <a href="https://github.com/Vezeveer" target="_blank" rel="noopener noreferrer">
+          <img src="/imgs/github-brands.svg" width="24px" height="24px" alt="github logo" />
+        </a>
       </div>
     </div>
 

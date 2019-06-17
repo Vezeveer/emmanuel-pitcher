@@ -20,4 +20,8 @@
   width: 100%;
   text-align: center;
 }
+
+.links a {
+  margin-right: 8px;
+}
 /*# sourceMappingURL=about.css.map */

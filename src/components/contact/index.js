@@ -48,7 +48,7 @@ export default class ContactForm extends Component {
             <div className="message-label">
               Message:
           </div>
-            <textarea id="message" type="text" name="message" rows="5" cols="50" required></textarea>
+            <textarea id="message" type="text" name="message" rows="5" cols="50" placeholder="minimum 10 characters" required></textarea>
           </label>
           <button className="submit-button" disabled>Send</button>
         </form>

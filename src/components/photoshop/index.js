@@ -73,7 +73,7 @@ export default class Photoshop extends Component {
             <img src="/imgs/photoshop/2.jpg" alt="" />
             <img src="/imgs/photoshop/3.jpg" alt="" />
             <img src="/imgs/photoshop/4.jpg" alt="" />
-            <img src="/imgs/photoshop/5.png" alt="" />
+            <img src="/imgs/photoshop/5.jpg" alt="" />
             <img src="/imgs/photoshop/6.jpg" alt="" />
           </div>
           <div className="column">

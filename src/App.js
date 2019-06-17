@@ -46,6 +46,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* If on mobile, show under construction */}
+        {true ? <div></div> : <div className="mobile-version">The mobile version of this site is under construction. Please use the desktop version.</div>}
         <div className="bg">
           <img className="left" src="/imgs/left-part.jpg" alt="" />
           <img className="right" src="/imgs/right-part.jpg" alt="" />
